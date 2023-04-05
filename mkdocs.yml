@@ -1,0 +1,16 @@
+site_name: Git User Documentation
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: indigo
+  nav_style: dark
+  features:
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
