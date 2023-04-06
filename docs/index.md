@@ -106,14 +106,14 @@ of the commands needed to set up your repository. The git repository can  be use
 
 ### Git Initializing
 
-First step in creating a local repository is to connect to git. This is done by initializing git on your local device. The command
+1 First step in creating a local repository is to connect to git. This is done by initializing git on your local device. The command
 used to do this is:
 
     git init
 
 ### Add a README file
 
-1.1 Run the following command to create a README file:
+2 Run the following command to create a README file:
 
         git add README.md
 ??? info
@@ -121,13 +121,13 @@ used to do this is:
 
 ### Track files with Git
 
-1.2 Add any changes or progress made in git repository.
+3 Add any changes or progress made in git repository.
 
     git add .
 
 ### Check status of files tracked
 
-1.3 You can then check the status of your git repository to make sure that the changes have are being tracked. 
+4 You can then check the status of your git repository to make sure that the changes have are being tracked. 
     
     git status
 
@@ -138,7 +138,7 @@ used to do this is:
 
 ### Git commit final changes
 
-1.4 Finalize those changes to git so that it knows to add them later on. 
+5 Finalize those changes to git so that it knows to add them later on. 
 
     git commit -m "first commit"
 
@@ -148,26 +148,25 @@ used to do this is:
 
 ### Git connect to main branch
 
-1.5 Chose a branch that you want to commit you changes to. Below is an example of how to chose the main branch for your commit:
+6 Chose a branch that you want to commit you changes to. Below is an example of how to chose the main branch for your commit:
 
     git branch -M main
 
 ### Git remote add
 
-1.6 Run the following command with the link to your github:
+7 Run the following command with the link to your github:
 
     git remote add origin https://github.com/YourLinkGoesHere/
     
 ### Git push
 
-1.7 The final step is to send you finalized changes to the github:
+8 The final step is to send you finalized changes to the github:
 
     git push -u origin main
 
 !!! Success     
     With that your github repository is all set up and ready to go.
 
-## Task 1.1 - Pushing to an existing Repository
 
 The purpose of this section of the documentation is to help users push their changes to an existing git hub repository. This section goes on to show you the step by step process
 of the commands needed to push your changes to a repository.<br>
