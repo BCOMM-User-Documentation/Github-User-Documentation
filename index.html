@@ -1,0 +1,853 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
+    
+    
+      
+        <title>Git User Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.c4a75a56.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Git User Documentation" class="md-header__button md-logo" aria-label="Git User Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Git User Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introduction
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Git User Documentation" class="md-nav__button md-logo" aria-label="Git User Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Git User Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Introduction
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Introduction
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#is-this-guide-for-you" class="md-nav__link">
+    Is This Guide for You?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-versions" class="md-nav__link">
+    Software Versions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typographical-conventions" class="md-nav__link">
+    Typographical Conventions
+  </a>
+  
+    <nav class="md-nav" aria-label="Typographical Conventions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glossary-terms" class="md-nav__link">
+    Glossary Terms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menu-option-sequence" class="md-nav__link">
+    Menu &amp; Option Sequence
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-inputs" class="md-nav__link">
+    User Inputs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keyboard-shortcuts" class="md-nav__link">
+    Keyboard Shortcuts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admonitions" class="md-nav__link">
+    Admonitions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#is-this-guide-for-you" class="md-nav__link">
+    Is This Guide for You?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-versions" class="md-nav__link">
+    Software Versions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typographical-conventions" class="md-nav__link">
+    Typographical Conventions
+  </a>
+  
+    <nav class="md-nav" aria-label="Typographical Conventions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glossary-terms" class="md-nav__link">
+    Glossary Terms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menu-option-sequence" class="md-nav__link">
+    Menu &amp; Option Sequence
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-inputs" class="md-nav__link">
+    User Inputs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keyboard-shortcuts" class="md-nav__link">
+    Keyboard Shortcuts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admonitions" class="md-nav__link">
+    Admonitions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="introduction">Introduction</h1>
+<p>This document aims to help you explore <strong>Git</strong> and <strong>Github</strong>'s <strong>version control</strong> capabilities. The core idea behind using <strong>Git</strong> and <strong>Github</strong> is to have full control over the stability and evolution of a project. This guide will direct you on the basic initialization steps you will need to gain these benefits in your project development.</p>
+<p>To learn more about <strong>Git</strong>, <strong>Github</strong> and <strong>version control</strong> <a href="https://docs.github.com/en/get-started/using-git/about-git">take a look at Github's introductory documentation</a>.</p>
+<h2 id="is-this-guide-for-you">Is This Guide for You?</h2>
+<p>This guide has been created for beginner level developers with no prior experience in <strong>version control</strong>, Git or Github. Using our detailed instructions, explanations and visual cues you will learn the basic workflow around <strong>version control</strong> in development.</p>
+<p>By the end of this guide, you will be able to</p>
+<ul>
+<li>
+<p>Create a <strong>local repository</strong> using Git's <strong>version control</strong> commands on the <strong>command line interface</strong></p>
+</li>
+<li>
+<p>Link your <strong>local repository</strong> to a <strong>remote repository</strong> hosted on Github</p>
+</li>
+<li>
+<p>Create branches on your <strong>local respository</strong> to safely make additions to an existing project</p>
+</li>
+</ul>
+<h2 id="software-versions">Software Versions</h2>
+<p>This guide has been produced for the 2.40.0 version of Git for the Windows 10 OS. If you are using an older version of Git we recommend you use documentation relevant to that version.</p>
+<p>There are also separate instruction guides available for macOS and Linux.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>
+<p>Have access to a computer with a functioning Windows 10 OS</p>
+</li>
+<li>
+<p>Have access to a keyboard and mousepad connected to your computer</p>
+</li>
+<li>
+<p>Have access to an internet connection</p>
+</li>
+<li>
+<p>Install a web browser on your computer</p>
+</li>
+<li>
+<p><a href="https://code.visualstudio.com/docs/setup/windows">Install VSCode on your computer</a></p>
+</li>
+<li>
+<p><a href="https://code.visualstudio.com/docs/introvideos/basics">Have a basic understanding of VSCode</a></p>
+</li>
+<li>
+<p><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Install Git and Git Bash on your computer</a></p>
+</li>
+<li>
+<p><a href="https://mally.stanford.edu/~sr/computing/basic-unix.html">Have a basic understanding of Git Bash commands</a></p>
+</li>
+<li>
+<p><a href="https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account">Create a Github account</a></p>
+</li>
+</ul>
+<h2 id="typographical-conventions">Typographical Conventions</h2>
+<p>This guide uses the typographical conventions specified below to make the content easier to follow and use.</p>
+<h3 id="commands">Commands</h3>
+<p>Commands expected to be written in a <strong>command line interface</strong> will be wrapped in a code block. E.g.</p>
+<div class="highlight"><pre><span></span><code>// git command goes here
+</code></pre></div>
+<p>The icon to the right of the code block allows you to copy the contents inside it, so that you can simply paste it on your own device.</p>
+<p>When referencing a small portion of code written in the <strong>command line interface</strong> inline content will have a black background and distinct font. For example <code>like this</code>.</p>
+<h3 id="glossary-terms">Glossary Terms</h3>
+<p>Glossary terms will be highlighted in bold. Further explanation on what they mean can be found in the glossary section of the document.</p>
+<p>An example of this can be seen above with the term <strong>command line interface</strong>.</p>
+<h3 id="menu-option-sequence">Menu &amp; Option Sequence</h3>
+<p>Menu and option names will be enclosed in square brackets. The &gt; symbol indicates the sequence in which menu, option and button names should be clicked. E.g.</p>
+<p>[Start] &gt; [Power] &gt; [Command Prompt]</p>
+<h3 id="user-inputs">User Inputs</h3>
+<p>Occasionally the guide will require you input information unique to your personal progress through the process. A description of what this information is will be wrapped between a less than and greater than sign. E.g.</p>
+<p>https://&lt;url_to_a_website&gt;</p>
+<h3 id="keyboard-shortcuts">Keyboard Shortcuts</h3>
+<p>Any keyboard shortcuts referenced in this guide will be wrapped in curly braces. If multiple keys need to be pressed together they will be separated by a plus sign. E.g.</p>
+<p>{ Ctrl + C }</p>
+<h3 id="admonitions">Admonitions</h3>
+<p>This guide uses information and warnings blocks to provide additional context around specific actions. These elements look as follows</p>
+<details class="info" open="open">
+<summary>Info</summary>
+<p>Provides additional information surrounding a step in the instructions. It is always wrapped in a blue content box, with an i icon on the far left.</p>
+</details>
+<details class="tip" open="open">
+<summary>Tip</summary>
+<p>Provides non critical but useful information surrounding a step in the instructions. It is always wrapped in a cyan content box, with a flame icon on the far left.</p>
+</details>
+<details class="warning" open="open">
+<summary>Warning</summary>
+<p>Provides information surrounding a step in the instructions that can cause errors or create a permanent change. It is always wrapped in an orange content box, with a danger icon on the far left.</p>
+</details>
+<p>All admonitions can be minimized and expanded by clicking on the colored header bar.</p>
+<h1 id="instructions">Instructions</h1>
+<h2 id="task-1-creating-a-local-repository">Task 1 - Creating a Local Repository</h2>
+<p>The purpose of this section of the documentation is to help users set up their git hub locally using the command line. This section goes on to show you the step by step process
+of the commands needed to set up your repository. The git repository can  be used to saved code that you have worked on, as well as collaborate with other using shared code.<br></p>
+<h3 id="git-initializing">Git Initializing</h3>
+<p>First step in creating a local repository is to connect to git and let git know that you want to create repository. This is done by initializing git on your local device. The command
+used to do this is:</p>
+<pre><code>git init
+</code></pre>
+<h3 id="add-a-readme-file">Add a README file</h3>
+<p>Once you have your git repository initialized, it's important to create a README file. The README file is used to let others know what is going on in the git repository. It allows
+for easier collaboration if there is an explanation for what the repository is used for. Run the following command to create a README file:</p>
+<pre><code>git add README.md
+</code></pre>
+<h3 id="track-files-with-git">Track files with Git</h3>
+<p>After you have your README file we can now add any changes or progress we've made in our git repository. To add changes to the repository we need to first let git know to track the
+progress made in those files. we do this by adding the files to git using the command:</p>
+<pre><code>git add .
+</code></pre>
+<h3 id="check-status-of-files-tracked">Check status of files tracked</h3>
+<p>You can then check the status of your git repository to make sure that the changes you have made are being tracked. If the files show as green in the terminal, that means they're being
+tracked if the files show as red you need to run git add . again. To check the status of your changes run the command:</p>
+<pre><code>git status
+</code></pre>
+<h3 id="git-commit-final-changes">Git commit final changes</h3>
+<p>Once you're confident about the changes that you've have made, you can finalize those changes to git so that it knows to add them later on. This can be done by committing  to git using git commit. After the git commit you should add -m followed by a short message describing the changes in quotation marks. Below is an example of a git commit with the message "first commit".</p>
+<pre><code>git commit -m "first commit"
+</code></pre>
+<h3 id="git-connect-to-main-branch">Git connect to main branch</h3>
+<p>Once your changes are finalized and committed, the next step is to chose a branch that you want to commit you changes to. A git repository can have a lot of branches however the default ones are main and master. Below is an example of how to chose the main branch for your commit:</p>
+<pre><code>git branch -M main
+</code></pre>
+<h3 id="git-remote-add">Git remote add</h3>
+<p>The next step is to let git know the location of your repository. We do this by running the following command with the link to your github:</p>
+<pre><code>git remote add origin https://github.com/YourLinkGoesHere/
+</code></pre>
+<h3 id="git-push">Git push</h3>
+<p>The final step is to send you finalized changes to the github location specified with the link above. To do this me must use the following command with the chosen branch at the end of the command. Below is an example of sending your final changes to git hub using main as your branch:</p>
+<pre><code>git push -u origin main
+</code></pre>
+<p>With that your github repository is all set up and ready to go.</p>
+<h2 id="task-11-pushing-to-an-existing-repository">Task 1.1 - Pushing to an existing Repository</h2>
+<p>The purpose of this section of the documentation is to help users push their changes to an existing git hub repository. This section goes on to show you the step by step process
+of the commands needed to push your changes to a repository.<br></p>
+<h3 id="track-files-with-git_1">Track files with Git</h3>
+<p>If the git repository already exists then the first thing we need to do is to add the changes we have made to git so that they can be tracked. This can be done by running the following command:</p>
+<pre><code>git  add .
+</code></pre>
+<h3 id="git-commit-final-changes_1">Git commit final changes</h3>
+<p>Once you're confident about the changes that you've have made, you  finalize those changes by committing  to git using git commit. After the git commit you should add -m followed by a short message describing the changes in quotation marks. Below is an example of a git commit with the message "first commit".</p>
+<pre><code>git commit -m "first commit"
+</code></pre>
+<h3 id="git-connect-to-main-branch_1">Git connect to main branch</h3>
+<p>Once your changes are finalized and committed, the next step is to chose a branch that you want to commit you changes to.Below is an example of how to chose the main branch for your commit:</p>
+<pre><code>git branch -M main
+</code></pre>
+<h3 id="git-push_1">Git push</h3>
+<p>The final step is to send you finalized changes to the github . To do this me must use the following command with the chosen branch at the end of the command. Below is an example of sending your final changes to git hub using main as your branch:</p>
+<pre><code>git push -u origin main
+</code></pre>
+<h2 id="task-2-creating-and-merging-a-branch-on-a-local-repository">Task 2 - Creating and Merging a Branch on a Local Repository</h2>
+<p>Creating a <strong>branch</strong> allows a developer to create a duplicate of their workspace to create changes on. This means any changes that damage the project structure are easily reversible by simply switching back to the original <strong>branch</strong>. In this section we will go through how to</p>
+<ul>
+<li>
+<p>create a <strong>branch</strong> in your <strong>local repository</strong></p>
+</li>
+<li>
+<p>add changes to a <strong>branch</strong></p>
+</li>
+<li>
+<p>merge changes from one <strong>branch</strong> to another</p>
+</li>
+</ul>
+<h3 id="task-21-creating-a-new-branch">Task 2.1 - Creating a New Branch</h3>
+<p>1. In VSCode open up the integrated terminal and ensure the terminal path matches the location of your local repository.</p>
+<details class="tip">
+<summary>Hotkey for opening the integrated terminal</summary>
+<p>Pressing { Ctrl + J } with VSCode open will automatically open the integrated terminal.</p>
+</details>
+<p>2. Input the following command in the terminal to create a new branch with a suitable name</p>
+<div class="highlight"><pre><span></span><code>git checkout -b &lt;branch_name&gt;
+</code></pre></div>
+<details class="info">
+<summary>What is git checkout?</summary>
+<p><code>git checkout</code> is an opening phrase which tells the Git scripting language that the user is attempting to view the data in a different branch. In normal circumstances the command is immediately followed by the branch name of the branch you are trying to view.</p>
+</details>
+<details class="info">
+<summary>What does the -b flag do?</summary>
+<p>Flags in Git are an additional modifier included when the action being taken needs to be modified due to a unique circumstance. In this case <code>-b</code> informs the Git scripting language that we are both creating a new branch and changing branches to view it at the same time.</p>
+</details>
+<details class="tip">
+<summary>Best practices for naming a branch</summary>
+<p>In the tech industry branches are generally distinguished by the type of change you are trying to create. This is usually either a bug-fix, feature or development. The naming convention is <code>&lt;type_of_change&gt;/&lt;change_description&gt;</code>. For example <code>bug-fix/fix-image-routes</code>.</p>
+</details>
+<p>3. Input the following command in the terminal to verify that your new branch has been made. You should see the new branch's name highlighted in the list produced by the command.</p>
+<div class="highlight"><pre><span></span><code>git branch
+</code></pre></div>
+<details class="info">
+<summary>Why is my new branch highlighted in the command output?</summary>
+<p>Since the <code>git branch</code> command retrieves a list of all branches, as a convenience feature the Git scripting language uses color and the <code>*</code> character to highlight the branch you are currently on.</p>
+</details>
+<h3 id="task-22-add-changes-to-a-branch">Task 2.2 - Add Changes to a Branch</h3>
+<p>1. Create your desired modifications on your new branch.</p>
+<p>2. Input the following command in the terminal to make the Git scripting language aware of the changes you want to add.</p>
+<div class="highlight"><pre><span></span><code>git add .
+</code></pre></div>
+<details class="info">
+<summary>What does git add . do?</summary>
+<p><code>git add</code> informs the Git scripting language of what files you want it to update on its copy of your project. The <code>.</code> that follows it a shorthand that tells the Git scripting language that we want it to update changes on all the files that have been modified. If you wanted to add a specific set of files, you would run the <code>git add &lt;file_name&gt;</code> command for each one.</p>
+</details>
+<p>3. Input the following command in the terminal to make the Git scripting language update its version of your project with the highlighted changes.</p>
+<div class="highlight"><pre><span></span><code>git commit -m &quot;&lt;description_of_the_changes_made&gt;&quot;
+</code></pre></div>
+<details class="info">
+<summary>What is git commit?</summary>
+<p><code>git commit</code> informs the Git scripting language to transfer any changes added with the <code>git add</code> command onto its copy of your project. After this command is run with the <code>git add .</code> command there are no changes between the project in your OS memory and the version being stored by Git.</p>
+</details>
+<details class="info">
+<summary>What does the -m flag do?</summary>
+<p>Flags in Git are an additional modifier included when the action being taken needs to be modified due to a unique circumstance. In this case <code>-m</code> informs the Git scripting language that we are both creating a new commit and creating a message to describe it at the same time.</p>
+</details>
+<details class="tip">
+<summary>Always make sure your commits have a meaningful message</summary>
+<p>Work that has been committed is viewed by colleagues and potentially even yourself down the line. Having a meaningful description of each incremental change makes it clear from the outside in as to what your thought process and approach was.</p>
+</details>
+<h3 id="task-23-merge-changes-from-one-branch-to-another">Task 2.3 - Merge Changes From One Branch to Another</h3>
+<p>1. Input the following command in the terminal to swap back to your original branch.</p>
+<div class="highlight"><pre><span></span><code>git checkout &lt;original_branch_name&gt;
+</code></pre></div>
+<details class="info">
+<summary>What is git checkout?</summary>
+<p><code>git checkout</code> is an opening phrase which tells the Git scripting language that the user is attempting to view the data in a different branch. In normal circumstances the command is immediately followed by the branch name of the branch you are trying to view.</p>
+</details>
+<details class="tip">
+<summary>Can't remember the name for your original branch?</summary>
+<p>The <code>git branch</code> command will present you with a list of branches in your local repository. Find the name of the branch in the list and then use it with the <code>git checkout</code> command.</p>
+</details>
+<p>2. Input the command below in the terminal to verify that you are now in the correct branch. You should see the original branch's name highlighted in the list produced by the command.</p>
+<div class="highlight"><pre><span></span><code>git branch
+</code></pre></div>
+<details class="info">
+<summary>Why is the original branch highlighted in the command output?</summary>
+<p>Since the <code>git branch</code> command retrieves a list of all branches, as a convenience feature the Git scripting language uses color and the <code>*</code> character to highlight the branch you are currently on.</p>
+</details>
+<p>3. Now that you are on the original branch, input the command below in the terminal to merge your new branch into it. If the merge is successful you should see all the changes made in the new branch now visible in the original branch.</p>
+<div class="highlight"><pre><span></span><code>git merge &lt;new_branch_name&gt;
+</code></pre></div>
+<details class="info">
+<summary>What is git merge?</summary>
+<p><code>git merge</code> informs the Git scripting language to merge the changes on the branch name written at the end of the command with the branch the developer is currently on.</p>
+</details>
+<details class="info">
+<summary>What happens to my new branch after I merge?</summary>
+<p>Nothing! Your new branch still exists. Though any further changes you make outside the branch will not be stored in the branch's version of your project.</p>
+</details>
+<h2 id="task-3-creating-a-remote-repository-and-linking-it-to-the-local-repository">Task 3 - Creating a Remote Repository and Linking it to The Local Repository</h2>
+<p>A <strong>remote repository</strong> allows a developer or organization to store the current version(s) of a project where others can access it. In this section we will go through how to</p>
+<ul>
+<li>
+<p>create a <strong>remote repository</strong></p>
+</li>
+<li>
+<p>link a <strong>remote repository</strong> to a local repository</p>
+</li>
+</ul>
+<h3 id="task-31-creating-a-new-remote-repository">Task 3.1 - Creating a New Remote Repository</h3>
+<p>1. Log into <a href="www.github.com">Github</a> using your Github account credentials. After logging in you should see a page displaying a list of repositories on the left.</p>
+<p>2. Click on the [New] button in the section listing repositories to navigate to the page for creating a new <strong>remote repository</strong></p>
+<details class="warning">
+<summary>Missing [New] button</summary>
+<p>If you can't see the [New] button it might be due to the size of your web browser. Try resizing the browser to fill the screen if it isn't already full screen.</p>
+</details>
+<details class="tip">
+<summary>Redirect to the new repository form using the URL</summary>
+<p>In the future you can load directly into <a href="www.github.com/new">www.github.com/new</a> once logged in and skip right to step 3 of this task.</p>
+</details>
+<p>3. Fill in the repository name and description inputs with a meaningful name and a summary for your project goal.</p>
+<details class="tip">
+<summary>Name and describe repositories the way employers want</summary>
+<p>The repository name is an opportunity to describe the projects functionality in two to three words. The description is an opportunity for a project summary n two to three sentences. Try keep this mind when making new repositories!</p>
+</details>
+<p>4. Decide whether you would like for the repository to be [Public] or [Private]. Public repositories are visible to the internet, whereas private repositories are shared only to those you choose.</p>
+<details class="tip">
+<summary>Default to private, change to public</summary>
+<p>If a repository is being made for learning purposes it is usually best to start it off as private. From there, if you want to make it visible for employment of business purposes, the repository visibility can be changed to public through its settings. To learn how <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility">click here</a>.</p>
+</details>
+<p>5. Include a README file and select the project's main language in the dropdown list for .gitignore templates</p>
+<details class="info">
+<summary>What is a .gitignore file?</summary>
+<p>The .gitignore file is used by Github to identify any files on your local repository that shouldn't be saved on its cloud service. By selecting your main project language Github produces an intelligent template of file types that would be unnecessary or dangerous to store. To learn more <a href="https://git-scm.com/docs/gitignore">click here</a>.</p>
+</details>
+<details class="info">
+<summary>Why include a README?</summary>
+<p>For any project it is recommended to include a README.md file. README files serve as a space where you can make a more detailed summary of the technology, functionality and structure of a project. At the very least this is very useful when returning to old work after a while. To learn more <a href="https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/">click here</a>.</p>
+</details>
+<p>6. If your repository is public, choose a license for your work that defines the regulations around your code being used by others.</p>
+<details class="tip">
+<summary>The MIT license is your best friend</summary>
+<p>The MIT license is simple, easy to understand and quite fair, making it my personal recommendation for learning projects. Important points are that it allows for free distribution of the work with no liability on the original author. To learn more <a href="https://snyk.io/learn/what-is-mit-license/">click here</a>.</p>
+</details>
+<p>7. Select the [Create repository] button on the bottom of the page to create your Github repository.</p>
+<h3 id="task-32-linking-the-remote-repository-to-the-local-repository">Task 3.2 - Linking The Remote Repository to The Local Repository</h3>
+<p>1. On the main page for your newly created remote repository, make sure the [HTTPS] button is selected in the Quick Setup header bar.</p>
+<details class="info">
+<summary>How do I know if [HTTPS] is selected?</summary>
+<p>It can be difficult to tell whether you have selected [HTTPS] or [SSH] due to Github's design. Selected buttons are a shade darker than their unselected counterparts</p>
+</details>
+<p>2. Copy the url provided in the input field beside the [HTTPS] button.</p>
+<details class="info">
+<summary>What is the url for?</summary>
+<p>The url provided by Github serves as a path for the Git scripting language to locate the internet based storage space they are providing.</p>
+</details>
+<p>3. In VSCode open up the integrated terminal and ensure the terminal path matches the location of your local repository.</p>
+<details class="tip">
+<summary>Hotkey for opening the integrated terminal</summary>
+<p>Pressing { Ctrl + J } with VSCode open will automatically open the integrated terminal.</p>
+</details>
+<p>4. Run the following command to link your local and remote repositories.</p>
+<div class="highlight"><pre><span></span><code>git remote add origin &lt;paste_link_here&gt;
+</code></pre></div>
+<details class="info">
+<summary>What is git remote?</summary>
+<p><code>git remote</code> is an opening phrase which informs the Git scripting language that the actions that follow are in relation to a remote or internet hosted repository.</p>
+</details>
+<details class="info">
+<summary>What is add origin?</summary>
+<p><code>add origin</code> asks the Git scripting language to create a link to a remote repository called origin that follows the path of the url placed after it.</p>
+</details>
+<p>5. Run the following command to upload all of your added and committed changes onto Github's remote repository.</p>
+<div class="highlight"><pre><span></span><code>git push -u origin master
+</code></pre></div>
+<details class="info">
+<summary>What is git push?</summary>
+<p><code>git push</code> is used to update a remote repository with the changes that have been made on the local file system. It can be thought of as the command for saving a backup of your committed work on the internet.</p>
+</details>
+<details class="info">
+<summary>What does the -u flag do?</summary>
+<p>Flags in Git are an additional modifier included when the action being taken needs to be modified due to a unique circumstance. In this case <code>-u</code> informs the Git scripting language that we are also configuring the location for where changes are supposed to be sent to. The <code>-u</code> flag only needs to be used when you are pushing to a remote repository for the first time.</p>
+</details>
+<details class="info">
+<summary>What does origin master do?</summary>
+<p>The <code>-u</code> flag has informed Git we are configuring what remote repository to send our data to with <code>git push</code>. The <code>origin master</code> clause now tells Git what remote repository and what branch to send the data to.</p>
+</details>
+<p>6. Refresh the page on your Github repository in the browser and ensure that all the changes you pushed have made their way across.</p>
+<h1 id="glossary">Glossary</h1>
+<p>This section of the documentation is intended to help users with understanding the common terms that are used when using GitHub.The following terms are necessary to know to understand the user documentation for GitHub:</p>
+<ul>
+<li><code>Repository</code> -  location where code and related files for a particular project are stored and managed.</li>
+<li><code>Initialize</code> - the process of creating a new Git repository for a project.</li>
+<li><code>Commit</code> - a capture of the state of the files in a Git repository.</li>
+<li><code>Push</code> - the process of uploading your local Git repository's committed changes to a remote repository on GitHub.</li>
+<li><code>Track</code> - the process of adding files or changes to the waiting area of a Git repository.</li>
+<li><code>Branch</code> - a copy of a project's code that allows you to make changes without affecting the original version.</li>
+<li><code>Merge</code> - the process of integrating changes from one branch of a Git repository into another branch.</li>
+<li><code>Merge Conflict</code> - A conflict that occurs when Git is unable to  merge changes from two different branches of a repository.</li>
+</ul>
+<h1 id="troubleshooting">Troubleshooting</h1>
+<p>This section of the documentation is meant to help users with common problems and <code>errors</code> that can happen when using GitHub. The information below is organized in a way that common problems and <code>errors</code> are labeled with danger or warning. The steps needed to troubleshoot the <code>error</code> is labeled success.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p><code>Error</code> Aborting commit due to empty commit message<br>
+   Occurs when you try to commit changes without providing a commit message.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Success<p>This <code>Error</code> can be fixed by adding a commit message after the commit in quotation</p>
+</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger<p>fatal <code>Error</code> not a git repository<br>
+Occurs when you try to run a Git command in a directory that is not a Git repository.</p>
+</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Success<p>Fixed by changing to an existing branch before pushing the changes to git|</p>
+</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>GitHub https code link not viewable<br>
+   Occurs when viewing GitHub on a minimized screen or smaller screen.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Success<p>This can be fixed by resizing the screen to full size.</p>
+</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Unable to view files with code on window <br>
+   Occurs when viewing GitHub on a minimized screen or smaller screen.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Success<p>This  can be fixed by clicking on the words view code in on the GitHub repository page.</p>
+</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p><code>Error</code> Cannot push to repository<br>
+   Occurs when you try to push to a repository that is ahead of your branch in GitHub.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Success<p>This <code>Error</code> can be fixed by first doing a git pull so that the repository is up to date with the branch, then you can do a git push.</p>
+</p>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy", "content.code.select", "content.code.annotate"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.efa0ade1.min.js"></script>
+      
+    
+  </body>
+</html>
