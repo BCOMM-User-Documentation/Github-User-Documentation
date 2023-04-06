@@ -32,8 +32,7 @@ This section of the documentation is meant to help users with common problems an
 ## I can't find the [Code] button in my remote repository
 
 !!! warning
-       GitHub https code link not viewable<br>
-       Occurs when viewing GitHub on a minimized screen or smaller screen.
+       This issue occurs when viewing GitHub on a minimized screen or smaller screen.
 
 !!! success
         This can be fixed by resizing the screen to full size.
@@ -42,8 +41,7 @@ This section of the documentation is meant to help users with common problems an
 ## I can't see any of my code even though I just pushed it to my remote repository
 
 !!! warning
-       Unable to view files with code on window <br>
-       Occurs when viewing GitHub on a minimized screen or smaller screen.
+       This issue occurs when viewing GitHub on a minimized screen or smaller screen.
 
 !!! success
         This  can be fixed by clicking on the words view code on the GitHub repository page.
