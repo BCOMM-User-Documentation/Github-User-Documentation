@@ -25,8 +25,8 @@ Creating a local repository is our first task. It walks the user step by step th
 * Initializing the repository 
 * Creating a readme file
 * Checking the status of the repository 
-* Committing your final changes to your local repository 
- 
+* Committing your final changes to your local repository
+
 Author: Stephane
 
 ## Task 2 - Creating and Merging a Branch on a Local Repository:
