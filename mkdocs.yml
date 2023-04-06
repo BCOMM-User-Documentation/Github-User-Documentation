@@ -5,8 +5,16 @@ markdown_extensions:
   - pymdownx.superfences
 
 repo_url: https://github.com/BCOMM-User-Documentation/Github-User-Documentation
-
 repo_name: Version-Control-Documentation
+
+nav:
+  - Introduction: 'index.md'
+  - Instructions:
+    - Task 1 - Creating a Local Repository: 'localRepo.md'
+    - Task 2 - Creating and Merging a Branch: 'branching.md'
+    - Task 3 - Creating a Remote Repository: 'remote.md'
+  - Glossary: 'glossary.md'
+  - Troubleshooting: 'trouble.md'
 
 theme:
   name: material
@@ -17,5 +25,3 @@ theme:
   nav_style: dark
   features:
     - content.code.copy
-    - content.code.select
-    - content.code.annotate
