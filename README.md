@@ -1,10 +1,10 @@
-# Who the Github User Documentation is intended for:
+## Who the Github User Documentation is intended for:
 
 
 This GitHub User Documentation was created for new users and users that have up to 1 year experience working with code and terminals. This documentation will serve as a walkthrough for the basics functionality like creating a local git repository, remote git repository and merging branches. 
 
 
-# Why we made the GitHub User Documentation:
+## Why we made the GitHub User Documentation:
 
 
 This documentation was created as a result of a class assignment regarding user documentation using markdown. We used markdown to format our documentation in a way that is easy for users to understand.
@@ -25,7 +25,8 @@ Creating a local repository is our first task. It walks the user step by step th
 * Initializing the repository 
 * Creating a readme file
 * Checking the status of the repository 
-* Committing your final changes to your local repository  
+* Committing your final changes to your local repository 
+ 
 Author: Stephane
 
 ## Task 2 - Creating and Merging a Branch on a Local Repository:
