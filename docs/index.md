@@ -106,56 +106,66 @@ of the commands needed to set up your repository. The git repository can  be use
 
 ### Git Initializing
 
-First step in creating a local repository is to connect to git and let git know that you want to create repository. This is done by initializing git on your local device. The command
+First step in creating a local repository is to connect to git. This is done by initializing git on your local device. The command
 used to do this is:
 
     git init
 
 ### Add a README file
 
-Once you have your git repository initialized, it's important to create a README file. The README file is used to let others know what is going on in the git repository. It allows
-for easier collaboration if there is an explanation for what the repository is used for. Run the following command to create a README file:
+1.1 Run the following command to create a README file:
 
-    git add README.md
+        git add README.md
+??? info
+    The README file is used to let others know what is going on in the git repository. It allows for easier collaboration if there is an explanation for what the repository is used for.
 
 ### Track files with Git
 
-After you have your README file we can now add any changes or progress we've made in our git repository. To add changes to the repository we need to first let git know to track the
-progress made in those files. we do this by adding the files to git using the command:
+1.2 Add any changes or progress made in git repository.
 
     git add .
 
 ### Check status of files tracked
 
-You can then check the status of your git repository to make sure that the changes you have made are being tracked. If the files show as green in the terminal, that means they're being
-tracked if the files show as red you need to run git add . again. To check the status of your changes run the command:
-
+1.3 You can then check the status of your git repository to make sure that the changes have are being tracked. 
+    
     git status
+
+??? success 
+    If the files show as green in the terminal, that means they're being
+    tracked if the files show as red you need to run git add . again. 
+
 
 ### Git commit final changes
 
-Once you're confident about the changes that you've have made, you can finalize those changes to git so that it knows to add them later on. This can be done by committing  to git using git commit. After the git commit you should add -m followed by a short message describing the changes in quotation marks. Below is an example of a git commit with the message "first commit".
+1.4 Finalize those changes to git so that it knows to add them later on. 
 
     git commit -m "first commit"
 
+??? info
+    After the git commit you should add -m followed by a short message describing the changes in quotation marks.
+
+
 ### Git connect to main branch
 
-Once your changes are finalized and committed, the next step is to chose a branch that you want to commit you changes to. A git repository can have a lot of branches however the default ones are main and master. Below is an example of how to chose the main branch for your commit:
+1.5 Chose a branch that you want to commit you changes to. Below is an example of how to chose the main branch for your commit:
 
     git branch -M main
 
 ### Git remote add
 
-The next step is to let git know the location of your repository. We do this by running the following command with the link to your github:
+1.6 Run the following command with the link to your github:
 
     git remote add origin https://github.com/YourLinkGoesHere/
     
 ### Git push
 
-The final step is to send you finalized changes to the github location specified with the link above. To do this me must use the following command with the chosen branch at the end of the command. Below is an example of sending your final changes to git hub using main as your branch:
+1.7 The final step is to send you finalized changes to the github:
 
     git push -u origin main
-With that your github repository is all set up and ready to go.
+
+!!! Success     
+    With that your github repository is all set up and ready to go.
 
 ## Task 1.1 - Pushing to an existing Repository
 
