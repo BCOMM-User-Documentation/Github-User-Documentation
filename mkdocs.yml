@@ -3,6 +3,11 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+
+repo_url: https://github.com/BCOMM-User-Documentation/Github-User-Documentation
+
+repo_name: Version-Control-Documentation
+
 theme:
   name: material
   palette:
