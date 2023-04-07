@@ -99,6 +99,6 @@ This guide uses information and warnings blocks to provide additional context ar
     Provides context around common errors that can be encountered whilst following the instruction set. It is always wrapped in a red content box, with a lightning bolt icon on the far left.
 
 ???+ success
-    Provides a description or explanation of the output that should be achieved if a task is successful. Sometimes it will include an embedded image to give a visual cue for what a successful action looks like. It is always wrapped in a green content box, with a tick icon on the far left.
+    Provides a description or explanation of the output that should be achieved if a task is successful where relevant. Often it will include an embedded image to give a visual cue for what a successful action looks like. It is always wrapped in a green content box, with a tick icon on the far left.
 
 All admonitions can be minimized and expanded by clicking on the colored header bar.

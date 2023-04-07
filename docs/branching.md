@@ -15,7 +15,23 @@ Creating a **branch** allows a developer to create a duplicate of their **local 
 ??? tip "Hotkey for opening the integrated terminal"
     Pressing ++control+j++ with VSCode open will automatically open the integrated **terminal**.
 
-2\. Input the following command in the **terminal** to create a new **branch** and give it a suitable name
+2\. On the right side tab of the **terminal**, check to see if your current **terminal** is `bash`. If not click the [&#709;] arrow beside the [+] button on the top right menu in the terminal. From the drop down list select `Git Bash`.
+
+???+ success
+    The **terminal** should open a new window labelled `bash`.
+
+    <img src='/terminal-success.png'>
+
+??? danger "I can't find **Git Bash** in the drop down list"
+    Check to ensure that you have installed **Git** and **Git Bash** correctly. In your current terminal input the following code
+
+    ```git
+    git --version
+    ```
+
+    If a version is not returned then your installation was most likely not successful.
+
+3\. Input the following command in the **terminal** to create a new **branch** and give it a suitable name
 
 ```git
 git checkout -b <branch_name>

@@ -1,4 +1,5 @@
-site_name: Version Control User Documentation
+site_name: Basic Version Control Using Git
+
 markdown_extensions:
   - admonition
   - pymdownx.details
