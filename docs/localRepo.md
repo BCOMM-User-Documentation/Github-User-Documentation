@@ -78,6 +78,9 @@ git commit -m "<description_of_the_changes_made>"
 git status
 ```
 
+??? success
+    The returned message should end with `nothing to commit, working tree clean`. This means that your local repository and the project on your OS are now in sync.
+
 ## Conclusion
 
 After having completed this section of the instructions, you should be able to
