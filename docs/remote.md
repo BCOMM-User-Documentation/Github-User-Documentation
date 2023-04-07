@@ -58,7 +58,7 @@ A **remote repository** allows a developer or organization to store the current 
 3\. In VSCode open up the integrated terminal and ensure the terminal path matches the location of your local repository.
 
 ??? tip "Hotkey for opening the integrated terminal"
-    Pressing { Ctrl + J } with VSCode open will automatically open the integrated terminal.
+    Pressing ++control+j++ with VSCode open will automatically open the integrated terminal.
 
 4\. Run the following command to link your local and remote repositories.
 
@@ -99,6 +99,6 @@ git push -u origin main
 
 After having completed this section of the instructions, you should be able to
 
-&#10004; Walk through Github's repository creation process in order to create a remote repository.
+[&#10004; Walk through Github's repository creation process in order to create a remote repository](/docs/remote.md#task-31---creating-a-new-remote-repository)
 
-&#10004; Run Git scripting language commands in order to link your remote and local repositories.
+[&#10004; Run Git scripting language commands in order to link your remote and local repositories.](/docs/remote.md#task-32---linking-the-remote-repository-to-the-local-repository)

@@ -80,7 +80,7 @@ https://&lt;url_to_a_website&gt;
 
 Any keyboard shortcuts referenced in this guide will be wrapped in curly braces. If multiple keys need to be pressed together they will be separated by a plus sign. E.g.
 
-{ Ctrl + C }
+++control+c++
 
 ### Admonitions
 

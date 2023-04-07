@@ -13,7 +13,7 @@ Creating a **branch** allows a developer to create a duplicate of their workspac
 1\. In VSCode open up the integrated terminal and ensure the terminal path matches the location of your local repository.
 
 ??? tip "Hotkey for opening the integrated terminal"
-    Pressing { Ctrl + J } with VSCode open will automatically open the integrated terminal.
+    Pressing ++control+j++ with VSCode open will automatically open the integrated terminal.
 
 2\. Input the following command in the terminal to create a new branch with a suitable name
 
@@ -106,8 +106,10 @@ git merge <new_branch_name>
 
 After having completed this section of the instructions, you should be able to
 
-&#10004; Run Git scripting language commands in order to create a new branch of a local repository.
+[&#10004; Run Git scripting language commands in order to create a new branch of a local repository](/docs/branching.md#task-21---creating-a-new-branch)
 
-&#10004; Run Git scripting language commands in order to update the branch with changes you have made.
+[&#10004; Run Git scripting language commands in order to update the branch with changes you have made.](/docs/branching.md#task-22---add-changes-to-a-branch)
 
-&#10004; Run Git scripting language commands in order to merge your new branch with the original branch.
+[&#10004; Run Git scripting language commands in order to merge your new branch with the original branch.](/docs/branching.md#task-23---merge-changes-from-one-branch-to-another)
+
+If you would like to explore some of the more advanced features the Git scripting language has to offer in terms of branching and merging, [click here](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging).

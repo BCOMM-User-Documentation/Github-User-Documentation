@@ -11,6 +11,7 @@ This section of the documentation is meant to help users with common problems an
         This error can be fixed by adding a commit message after the commit in quotation
 
 -------------------------------------------------------------------------
+
 ## Fatal Error: Not a git repository
 
 !!! danger
@@ -20,6 +21,7 @@ This section of the documentation is meant to help users with common problems an
         This error is fixed by changing to an existing branch before pushing the changes to git
 
 -------------------------------------------------------------------------
+
 ## Error: Cannot push to repository
 
 !!! danger
@@ -29,6 +31,7 @@ This section of the documentation is meant to help users with common problems an
         This error can be fixed by first doing a git pull so that the branch is up to date with the repository, then you can do a git push.
 
 -------------------------------------------------------------------------
+
 ## I can't find the [Code] button in my remote repository
 
 !!! warning
@@ -38,6 +41,7 @@ This section of the documentation is meant to help users with common problems an
         This can be fixed by resizing the screen to full size.
 
 -------------------------------------------------------------------------
+
 ## I can't see any of my code even though I just pushed it to my remote repository
 
 !!! warning

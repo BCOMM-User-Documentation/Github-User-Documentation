@@ -58,6 +58,8 @@ git commit -m "<meaningful_commit_message>"
 
 After having completed this section of the instructions, you should be able to
 
-&#10004; Run Git scripting language commands in order to create a new local repository
+[&#10004; Run Git scripting language commands in order to create a new local repository](/docs/localRepo.md#task-11---initialize-a-git-repository)
 
-&#10004; Run Git scripting language commands in order to update a local repository with new changes
+[&#10004; Run Git scripting language commands in order to update a local repository with new changes](/docs/localRepo.md#task-12---add-your-changes-to-the-local-respository)
+
+If you would like to explore some of the more advanced features Github has to offer in terms of managing remote repositories, [explore Github's documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features)

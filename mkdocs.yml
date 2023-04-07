@@ -1,8 +1,9 @@
-site_name: Git User Documentation
+site_name: Version Control User Documentation
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.keys
 
 repo_url: https://github.com/BCOMM-User-Documentation/Github-User-Documentation
 repo_name: Version-Control-Documentation
@@ -25,3 +26,8 @@ theme:
   nav_style: dark
   features:
     - content.code.copy
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.top
+  markdown_extensions:
+    - attr_list
