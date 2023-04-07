@@ -11,12 +11,12 @@ The purpose of this section of the documentation is to help new developers use *
 1\. To begin with make sure you have VSCode's integrated **terminal** open on the directory you want to store in your **local repository**.
 
 ??? tip "Hotkey for opening the integrated terminal"
-    Pressing ++control+j++ with VSCode open will automatically open the integrated terminal.
+    Pressing ++control+j++ with VSCode open will automatically open the integrated **terminal**.
 
 2\. On the right side tab of the **terminal**, check to see if your current **terminal** is `bash`. If not click the [&#709;] arrow beside the [+] button on the top right menu in the terminal. From the drop down list select `Git Bash`.
 
 ???+ success
-    The terminal should open a new window labelled `bash`.
+    The **terminal** should open a new window labelled `bash`.
 
     <img src='/terminal-success.png'>
 
