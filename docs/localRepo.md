@@ -13,11 +13,17 @@ of the commands needed to set up your repository. The git repository can  be use
 git init
 ```
 
+??? info "What is git init?"
+    `git init` informs the Git scripting language to create a .git directory at your current location in the terminal. The .git directory is where your local repository is stored.
+
 3\. Run the following command to create a README file:
 
 ```git
 git add README.md
 ```
+
+??? info "Why include a README?"
+    For any project it is recommended to include a README.md file. README files serve as a space where you can make a more detailed summary of the technology, functionality and structure of a project. At the very least this is very useful when returning to old work after a while. To learn more [click here](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/).
 
 ## Task 1.2 - Add Your Changes to The Local Respository
 
@@ -27,11 +33,20 @@ git add README.md
 git status
 ```
 
+??? info "What does git status do?"
+    `git status` displays a list of paths inside the project which are different from the information that is stored in the local repository. When you first start a repository every file in the project should appear marked in red after the command is run.
+
+??? success
+    A list of filepaths prefixed with `modified:` and marked in red. The list should include every file in the project.
+
 2\. Add any changes or progress made in git repository.
 
 ```git
 git add .
 ```
+
+??? info "What does git add . do?"
+    `git add` informs the Git scripting language of what files you want it to update on its copy of your project. The `.` that follows it a shorthand that tells the Git scripting language that we want it to update changes on all the files that have been modified. If you wanted to add a specific set of files, you would run the `git add <file_name>` command for each one.
 
 3\. Run the command from step 1 once more to ensure that the Git scripting language is now tracking changes in all the files in the directory.
 
@@ -40,8 +55,7 @@ git status
 ```
 
 ??? success
-    If the files show as green in the terminal, that means they're being
-    tracked if the files show as red you need to run git add . again.
+    If the files listed display as green in the terminal, that means they're being tracked.
 
 4\. Finalize those changes by adding the following command into you command line interface. This so that the Git scripting language knows that these changes are authorized to save in the repository
 
