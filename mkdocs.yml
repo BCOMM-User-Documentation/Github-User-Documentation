@@ -4,6 +4,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.keys
+  - attr_list
+  - md_in_html
 
 repo_url: https://github.com/BCOMM-User-Documentation/Github-User-Documentation
 repo_name: Version-Control-Documentation
@@ -29,5 +31,4 @@ theme:
     - navigation.tabs.sticky
     - navigation.expand
     - navigation.top
-  markdown_extensions:
-    - attr_list
+    

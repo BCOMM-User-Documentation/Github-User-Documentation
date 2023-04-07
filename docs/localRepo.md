@@ -5,9 +5,28 @@ of the commands needed to set up your repository. The git repository can  be use
 
 ## Task 1.1 - Initialize a Git Repository
 
-1\. To begin with make sure you have VSCode's integrated terminal open on the directory system you are storing in your local repository.
+1\. To begin with make sure you have VSCode's integrated terminal open on the directory you are storing in your local repository.
 
-2\. The first step in creating a local repository is to initialize it using the Git scripting language. To do this, input the following command into the command line interface.
+??? tip "Hotkey for opening the integrated terminal"
+    Pressing ++control+j++ with VSCode open will automatically open the integrated terminal.
+
+2\. On the right side tab of the terminal, check to see if your current terminal is `bash`. If not click the [&#709;] arrow beside the [+] button on the top right menu in the terminal. From the drop down list select `Git Bash`.
+
+???+ success
+    The terminal should open a new window labelled `bash`.
+
+    <img src='/terminal-success.png'>
+
+??? danger "I can't find Git Bash in the drop down list"
+    Check to ensure that you have installed Git and Git Bash correctly. In your current terminal input the following code <br>
+
+    ```git
+    git --version
+    ```
+
+    If a version is not returned then your installation was not successful.
+
+3\. The first step in creating a local repository is to initialize it using the Git scripting language. To do this, input the following command into the command line interface.
 
 ```git
 git init
@@ -16,14 +35,30 @@ git init
 ??? info "What is git init?"
     `git init` informs the Git scripting language to create a .git directory at your current location in the terminal. The .git directory is where your local repository is stored.
 
-3\. Run the following command to create a README file:
+???+ success
+    When opening file explorer and navigating to the filepath your project is in, you should see a .git directory.
+
+    <img src='/git-init-success.png'>
+
+??? danger "I can't see the .git folder in my project directory"
+    It is possible that you cannot see the folder even though it exists due to your system settings. Folders beginning with `.` are hidden folders and by default are not visible in File Explorer. To learn how to change these settings, [click here](https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5).
+
+4\. Run the following command to create a README file:
 
 ```git
-git add README.md
+>> README.md
 ```
+
+??? info "What does >> do?"
+    `>>` is a snippet of the Bash scripting language used by the Git Bash terminal. The shorthand asks bash to create a file in the current directory with whatever name and extension follows it.
 
 ??? info "Why include a README?"
     For any project it is recommended to include a README.md file. README files serve as a space where you can make a more detailed summary of the technology, functionality and structure of a project. At the very least this is very useful when returning to old work after a while. To learn more [click here](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/).
+
+???+ success
+    In the [Explorer] tab in VSCode you should see a file called `README.md` added to the list of files inside the project directory.
+
+    <img src='/add-readme-success.png'>
 
 ## Task 1.2 - Add Your Changes to The Local Respository
 
@@ -36,8 +71,10 @@ git status
 ??? info "What does git status do?"
     `git status` displays a list of paths inside the project which are different from the information that is stored in the local repository. When you first start a repository every file in the project should appear marked in red after the command is run.
 
-??? success
-    A list of filepaths prefixed with `modified:` and marked in red. The list should include every file in the project.
+???+ success
+    A list of filepaths marked in red. The list should include every file in the project.
+
+    <img src='/init-status-success.png'>
 
 2\. Add any changes or progress made in git repository.
 
@@ -54,8 +91,10 @@ git add .
 git status
 ```
 
-??? success
-    A list of filepaths prefixed with `modified:` and marked in green. The list should include every file in the project.
+???+ success
+    A list of filepaths prefixed with `new file:` and marked in green. The list should include every file in the project.
+
+    <img src='/post-add-status-success.png'>
 
 4\. Finalize those changes by adding the following command into you command line interface. This so that the Git scripting language knows that these changes are authorized to save in the repository
 
@@ -72,14 +111,21 @@ git commit -m "<description_of_the_changes_made>"
 ??? tip "Always make sure your commits have a meaningful message"
     Work that has been committed is viewed by colleagues and potentially even yourself down the line. Having a meaningful description of each incremental change makes it clear from the outside in as to what your thought process and approach was.
 
+???+ success
+    For every file in the project an output should be generated containing the file name prefixed by `create mode` and a string of numbers.
+
+    <img src='/commit-success.png'>
+
 5\. Run the `git status` command from step 1 and 3 to confirm that the changes have been moved over to your local repository.
 
 ```git
 git status
 ```
 
-??? success
+???+ success
     The returned message should end with `nothing to commit, working tree clean`. This means that your local repository and the project on your OS are now in sync.
+
+    <img src='/post-commit-success.png'>
 
 ## Conclusion
 
