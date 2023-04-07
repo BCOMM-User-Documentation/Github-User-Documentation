@@ -1,6 +1,6 @@
 # Task 2 - Creating and Merging a Branch on a Local Repository
 
-Creating a **branch** allows a developer to create a duplicate of their workspace to create changes on. This means any changes that damage the project structure are easily reversible by simply switching back to the original **branch**. In this section we will go through how to
+Creating a **branch** allows a developer to create a duplicate of their **local repository** to create changes on. This means any changes that damage the project structure are easily reversible by simply switching back to the original **branch**. In this section we will go through how to
 
 * create a **branch** in your **local repository**
 

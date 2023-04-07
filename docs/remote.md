@@ -102,3 +102,5 @@ After having completed this section of the instructions, you should be able to
 [&#10004; Walk through Github's repository creation process in order to create a remote repository](/docs/remote.md#task-31---creating-a-new-remote-repository)
 
 [&#10004; Run Git scripting language commands in order to link your remote and local repositories.](/docs/remote.md#task-32---linking-the-remote-repository-to-the-local-repository)
+
+If you would like to explore some of the more advanced features **Github** has to offer in terms of managing **remote repositories**, [explore Github's documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features)
