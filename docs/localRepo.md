@@ -55,18 +55,28 @@ git status
 ```
 
 ??? success
-    If the files listed display as green in the terminal, that means they're being tracked.
+    A list of filepaths prefixed with `modified:` and marked in green. The list should include every file in the project.
 
 4\. Finalize those changes by adding the following command into you command line interface. This so that the Git scripting language knows that these changes are authorized to save in the repository
 
 ```git
-git commit -m "<meaningful_commit_message>"
+git commit -m "<description_of_the_changes_made>"
 ```
 
-??? info
-    After the git commit you should add -m followed by a short message describing the changes in quotation marks.
+??? info "What is git commit?"
+    `git commit` informs the Git scripting language to transfer any changes added with the `git add` command onto its copy of your project. After this command is run with the ` git add .` command there are no changes between the project in your OS memory and the version being stored by Git.
+
+??? info "What does the -m flag do?"
+    Flags in Git are an additional modifier included when the action being taken needs to be modified due to a unique circumstance. In this case `-m` informs the Git scripting language that we are both creating a new commit and creating a message to describe it at the same time.
+
+??? tip "Always make sure your commits have a meaningful message"
+    Work that has been committed is viewed by colleagues and potentially even yourself down the line. Having a meaningful description of each incremental change makes it clear from the outside in as to what your thought process and approach was.
 
 5\. Run the `git status` command from step 1 and 3 to confirm that the changes have been moved over to your local repository.
+
+```git
+git status
+```
 
 ## Conclusion
 
